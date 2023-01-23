@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Your Store">
+	<listeners>
+		<listener class-name="Analyzer.MyTransformer"/>
+		<listener class-name="com.utils.Listeners"/>
+	</listeners>
+	<test name="register" enabled="false">
+		<classes>
+			<class name="com.testcases.RegisterPageTest">
+				<methods>
+					<include name="navRegPage"/>
+					<include name="fillRegDetails"/>
+					<include name="verifyReg"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="login">
+		<classes>
+			<class name="com.testcases.LoginPageTest">
+				<methods>
+					<include name="NavLoginPage"/>
+					<include name="loginTest"/>
+					<include name="verifyLogin"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
