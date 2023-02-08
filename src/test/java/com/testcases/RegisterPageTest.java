@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import com.base.TestBase;
 import com.pages.HomePage;
 import com.pages.RegisterPage;
+import com.utils.DataSupplier;
 import com.utils.TestUtil;
 
 public class RegisterPageTest extends TestBase {
@@ -33,7 +34,7 @@ public class RegisterPageTest extends TestBase {
 	
 	@DataProvider
 	public Object[][] excelData() {
-		Object data[][] = TestUtil.getData("register");
+		Object data[][] = DataSupplier.getData("register");
 		
 		return data;
 	}

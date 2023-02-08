@@ -17,7 +17,7 @@
 		</classes>
 	</test>
 	
-	<test name="login">
+	<test name="login" enabled="true">
 		<classes>
 			<class name="com.testcases.LoginPageTest">
 				<methods>
